@@ -32,12 +32,15 @@ export const HeaderButtonBase = styled.button`
 	border-radius: 6px;
 	border: none;
 	padding: 0 0.5rem;
+	font-size: ${({ theme }) => theme.textSizes["text-regular-s"]};
 `;
 
 export const HeaderButtonLocation = styled(HeaderButtonBase)`
-	background: #f00;
+	background: ${({ theme }) => theme.colors["brand-purple-light"]};
+	color: ${({ theme }) => theme.colors["brand-purple-dark"]};
 `;
 
 export const HeaderButtonCart = styled(HeaderButtonBase)`
-	background: #ff0;
+	background: ${({ theme }) => theme.colors["brand-yellow-light"]};
+	color: ${({ theme }) => theme.colors["brand-yellow-dark"]};
 `;
